@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to top, rgb(122, 44, 185), rgb(136, 10, 115));
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.massage-box {
+    position: fixed;
+    right: 20px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.massage {
+    margin: 5px 0 ;
+    background-color: #fff;
+    padding: 10px;
+    color: linear-gradient(to top, rgb(122, 44, 185), rgb(136, 10, 115));
+    transition: 3s;
+}
+.massage.read {
+    transform: translateY(1000px);
+}
+.btn {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ab47bc;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn:active {
+    outline: none;
+    transform: scale(0.98);
+}
+.info {
+    color: rebeccapurple;
+}
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
